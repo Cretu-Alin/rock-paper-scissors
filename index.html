@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h3 class="title">
+          <span>ROCK</span>
+          <span>PAPER</span>
+          <span>SCISSORS</span>
+        </h3>
+        <div class="score-container">
+          <p class="score">SCORE <span>0</span></p>
+        </div>
+      </div>
+      <div class="items">
+        <img src="./images/bg-triangle.svg" class="out" alt="" />
+
+        <div class="rock circle">
+          <div class="inner">
+            <img src="./images/icon-rock.svg" alt="" />
+          </div>
+        </div>
+        <div class="paper circle">
+          <div class="inner">
+            <img src="./images/icon-paper.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="scissors circle">
+          <div class="inner">
+            <img src="./images/icon-scissors.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="selection">
+        <div class="player-choice">
+          <h2 class="title">You picked</h2>
+          <div class="rock circle" id="user_select">
+            <div class="inner">
+              <img src="./images/icon-rock.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="message">
+          <h1 id="text">You <span id="win">win</span></h1>
+          <button class="btn" id="reset">Play again</button>
+        </div>
+        <div class="computer-choice">
+          <h2 class="title">The House picked</h2>
+          <div class="paper circle" id="computer_select">
+            <div class="inner">
+              <img src="./images/icon-paper.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
