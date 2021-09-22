@@ -48,7 +48,7 @@ const checkWinner = () => {
     (userChoice === "scissors" && computerChoice === "paper")
   ) {
     updateScore(1);
-    win.innerText = " WIN";
+    win.innerText = " WON";
   } else {
     win.innerText = " LOST";
   }
